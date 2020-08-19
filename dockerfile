@@ -9,7 +9,7 @@ COPY requirements.txt ./requirements.txt
 RUN pip install --upgrade pip 
 RUN pip install -r requirements.txt
 
-
+COPY config.yaml /opt/config.yaml
 
 ADD fonts /usr/share/fonts/truetype/
 
